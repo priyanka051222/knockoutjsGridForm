@@ -1,0 +1,80 @@
+<section class="row">
+  <section class="registrationForm col-lg-7 col-md-7 col-sm-12 col-xs-12">
+    <div class="details">
+      <div class="detailText  bg-info"  data-bind="visible:shouldShowMessage"> <span data-bind="text:message"></span></div>
+    </div>
+  <form>
+
+  <div class="form-group">
+  <label for="firstName">First Name:</label>
+  <input class="form-control" type="text" id="firstName" name="firstName" data-bind="value:firstName"/>
+  </div>
+  <div class="form-group">
+  <label for="lastName">Last Name:</label>
+  <input class="form-control" type="text" id="lastName" name="lastName" data-bind="value:lastName"/>
+  </div>
+  <div class="form-group">
+  <label for="dob">Date of birth:</label>
+  <input class="form-control" type="date" id="dob" name="dob" data-bind="value:dob"/>
+  </div>
+
+
+<div class="form-group">
+  <label for="countryInput">Country:</label>
+       <input id="countryInput" type="text"  data-bind="value: selectedCountry"
+              list="countryList"  class="form-control" placeholder="Choose a country" />
+
+       <datalist id="countryList" data-bind="foreach: countries">
+           <option data-bind="value: country"></option>
+       </datalist>
+</div>
+
+<div class="form-group">
+           <!--Display states belonging to selected country: -->
+               <!-- ko foreach : countries-->
+               <!-- ko if: country === $parent.selectedCountry() -->
+               <label for="stateInput">State:</label>
+
+               <select class="form-control" data-bind="foreach: states,value: $parent.stateSelect,
+               valueUpdate: 'change',optionsCaption :'choose a state'">
+                   <option data-bind="text: $data">
+                   </option>
+               </select>
+               <!-- /ko -->
+            <!-- /ko -->
+
+</div>
+<div class="form-group">
+  <label for="files[]">Upload Profile Picture:</label>
+
+  <input type="file" id="files" name="files[]" multiple data-bind=" event:{change:fileSelect}" />
+</div>
+  <div class="form-group">
+    <a class="btn btn-primary" data-bind="click:createUser">Submit</a>
+    <a class="btn btn-default">Cancel</a>
+  </div>
+
+  </form>
+  </section>
+  <section class="col-lg-5 col-md-5 col-sm-12 col-xs-12 ">
+    <div class="details">
+      <h2>Details : </h2>
+      <div class="detailText  bg-info">First Name : <span data-bind="text:firstName"></span></div>
+      <div class="detailText  bg-info">Last Name  <span data-bind="text:lastName"></span></div>
+      <div class="detailText bg-info">  Date of birth :  <span data-bind="text:dob"></span></div>
+      <div class="detailText  bg-info">  Country :  <span data-bind="text:selectedCountry"></span></div>
+      <div class="detailText  bg-info">  State :  <span data-bind="text:stateSelect"></span></div>
+      <div class="detailText  bg-info">  File: <output id="list"></output>
+      <ul>
+          <!-- ko foreach: files-->
+          <li>
+              <span data-bind ="text: name"></span>: <img class="thumb" data-bind = "attr: {'src': src, 'title': name}"/>
+          </li>
+          <!-- /ko -->
+      </ul>
+     </div>
+
+    </details>:</label>
+
+  </section>
+</section>

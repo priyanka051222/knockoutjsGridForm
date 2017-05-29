@@ -1,0 +1,27 @@
+<section class="gridTable">
+  <table  class="table table-condensed">
+      <thead>
+        <tr data-bind="foreach : gridColumns">
+             <th>
+               <span data-bind="text:$data"></span>
+               <span class="ascendingArrow" data-bind="click:function(){ $parent.sortTable('ascending',$data); }"> &#9650;</span>
+               <span class="descendingArrow" data-bind="click:function(){ $parent.sortTable('descending',$data);}">&#9660; <span>
+             </th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- ko foreach:currentPage -->
+        <tr data-bind="foreach :$parent.gridColumns  ">
+            <td data-bind="text:$parent[$data]" ></td>
+        </tr>
+        <!-- /ko -->
+      </tbody>
+  </table>
+  <nav aria-label="..." class="text-center"><ul class="pagination pagination-lg">
+   <li><a href="#" aria-label="Previous" data-bind="click: previousPage"><span aria-hidden="true">«</span></a></li>
+   <!-- ko foreach:pagesNumber -->
+   <li><a href="#" data-bind="text:$data ,click:$parent.jumpToPage"></a></li>
+   <!-- /ko -->
+   <li><a href="#" aria-label="Next" data-bind="click: nextPage"><span aria-hidden="true">»</span></a></li></ul></nav>
+
+</section>

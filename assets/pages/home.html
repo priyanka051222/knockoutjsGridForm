@@ -1,0 +1,25 @@
+
+   <div class="tab-container">
+     <ul class="nav nav-tabs">
+        <li class="active">
+           <a  href="#1" data-toggle="tab">Register</a>
+        </li>
+        <li><a href="#2" data-toggle="tab">Users</a>
+        </li>
+        <li><a href="#3" data-toggle="tab">Help</a>
+        </li>
+     </ul>
+     <div class="tab-content ">
+        <div class="tab-pane active" id="1">
+            <h2 class="title-heading">Register here:</h2>
+           <div id="page1" class="appWrapper"  data-bind="component: { name: 'registration', params:  'registration' }"></div>
+        </div>
+        <div class="tab-pane" id="2">
+           <h2 class="title-heading">User List:</h2>
+           <div id="page1" class="appWrapper"  data-bind="component: { name: 'userList', params:  'userList' }"></div>
+        </div>
+        <div class="tab-pane" id="3">
+           <h2>add clearfix to tab-content (see the css)</h2>
+        </div>
+     </div>
+  </div>

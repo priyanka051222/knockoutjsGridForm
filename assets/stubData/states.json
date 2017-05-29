@@ -1,0 +1,16 @@
+{
+  "states" :{
+    "US":[
+      "Alabama","Alaska" , "Arizona" , "Arkansas" , "California" , "Colorado" , "Connecticut"
+    ],
+    "BE":[
+      "Antwerp", "Brabant","West Flanders", "East Flanders", "Hainaut", "Liège", "Limburg", "Luxembourg", "Namur"
+    ],
+    "IN":[
+      "Andhra Pradesh","Haryana","Gujarat","Madhya Pradesh","Maharashtra","Sikkim"
+    ],
+    "UK":[
+      "England", "Scotland", "Wales","Northern Ireland"
+    ]
+    }
+}

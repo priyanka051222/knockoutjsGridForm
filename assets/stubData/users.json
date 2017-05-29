@@ -1,0 +1,75 @@
+{
+  "userList":[{
+    "First Name":"Priyanka",
+    "Last Name":"Agrawal",
+    "Dob":"31/10/1989",
+    "Country":"India",
+    "State":"Madhya Pradesh"
+    },{
+      "First Name":"Priya",
+      "Last Name":"Kesharwani",
+      "Dob":"05/12/1990",
+      "Country":"United States of America",
+      "State":"Albama"
+      },{
+        "First Name":"Ritu",
+        "Last Name":"Garg",
+        "Dob":"31/04/1984",
+        "Country":"United Kingdom",
+        "State":"Scotland"
+        },{
+          "First Name":"Sudeep",
+          "Last Name":"Kumar",
+          "Dob":"01/07/1996",
+          "Country":"Belgium",
+          "State":"Antwerp"
+    },{
+      "First Name":"Priyanka",
+      "Last Name":"Agrawal",
+      "Dob":"31/10/1989",
+      "Country":"India",
+      "State":"Madhya Pradesh"
+      },{
+        "First Name":"Ankit",
+        "Last Name":"Kesharwani",
+        "Dob":"23/12/2002",
+        "Country":"United States of America",
+        "State":"Cticutonnec"
+        },{
+          "First Name":"Navya",
+          "Last Name":"Mittal",
+          "Dob":"31/12/1991",
+          "Country":"United Kingdom",
+          "State":"Wales"
+          },{
+            "First Name":"Pradeep",
+            "Last Name":"Kumar",
+            "Dob":"12/08/1962",
+            "Country":"Belgium",
+            "State":"Namur"
+      },{
+        "First Name":"Priyanka",
+        "Last Name":"Agrawal",
+        "Dob":"31/10/1989",
+        "Country":"India",
+        "State":"Madhya Pradesh"
+        },{
+          "First Name":"Priya",
+          "Last Name":"Kesharwani",
+          "Dob":"05/12/1990",
+          "Country":"United States of America",
+          "State":"Albama"
+          },{
+            "First Name":"Ritu",
+            "Last Name":"Garg",
+            "Dob":"31/04/1984",
+            "Country":"United Kingdom",
+            "State":"Scotland"
+            },{
+              "First Name":"Sudeep",
+              "Last Name":"Kumar",
+              "Dob":"01/07/1996",
+              "Country":"Belgium",
+              "State":"Antwerp"
+              }]
+}
